@@ -29,14 +29,14 @@ public class Serveur
 			ServerSocket ss = new ServerSocket(4660);
 
 			System.out.println("Attente de deux clients ...");
-			while(lstClient.size() < 2)
+			while(this.lstClient.size() < 2)
 			{
 				Socket toClient = ss.accept();
 
 				this.lstClient.add(toClient);
 
 				PrintWriter    out = new PrintWriter   (toClient.getOutputStream(), true);
-				out.println("Bienvenue, nous allons bientot jouer !!!");
+				out.println("Bienvenue, nous allons bientot jouer !!!\n");
 			}
 		}
 		catch (IOException ioe) 
@@ -61,17 +61,20 @@ public class Serveur
 			PrintWriter    out1 = new PrintWriter   (this.lstClient.get(aj).getOutputStream(), true);
 			BufferedReader in1  = new BufferedReader(new InputStreamReader(this.lstClient.get(aj).getInputStream()));
 
+			out.println("-------------");
+			out1.println("-------------");
 
-			out.println("C'est à ton tour");
-			out1.println("L'autre joueur est en train de jouer !!!");
+			out.println("C'est à vous de jouez (<lig>:<col>) : ");
+			out1.println("C'est au tour de l'autre joueur !!!\n");
 
 			String sTest = in.readLine();
-			while ( !(Integer.parseInt("" + sTest.charAt(0)) <= 2) &&
+			while ( !(sTest.length() >= 3) &&
+					!(Integer.parseInt("" + sTest.charAt(0)) <= 2) &&
 					!(Integer.parseInt("" + sTest.charAt(0)) >= 0) &&
 					!(Integer.parseInt("" + sTest.charAt(2)) <= 2) &&
 					!(Integer.parseInt("" + sTest.charAt(2)) >= 0))
 			{
-				out.println("Saisie invalide, recommence");
+				out.println("Saisie invalide, recommencez");
 				sTest = in.readLine();
 			}
 
@@ -80,8 +83,14 @@ public class Serveur
 
 			this.ctrl.joueCase(lig, col);
 
+			out.println("Voici votre coup : ");
+			out.println(this.ctrl.getPlateau());
+
 			out1.println("Le coup est joué, voici le plateau : ");
 			out1.println(this.ctrl.getPlateau());
+
+			out.println("\n");
+			out1.println("\n");
 		}
 		catch(Exception e){ System.out.println(e);}
 

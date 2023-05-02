@@ -38,31 +38,33 @@ public class Serveur
 
 				PrintWriter    out = new PrintWriter   (toClient.getOutputStream(), true);
 				out.println("Bienvenue");
-
-				out.close();
-				toClient.close();
 			}
 		}
 		catch (IOException ioe) 
 		{
 			System.out.println("erreur");
 		}
-		System.out.println("\nLa artie peut commencer\n");
+		System.out.println("\nLa partie peut commencer\n");
 	}
 
 	public void jouer()
 	{
+		System.out.println("Avant le début");
 		int j, aj;
 		if(this.nbTour % 2 == 0){j = 0;aj = 1;}
 		else{j = 1;aj = 0;}
 
 		try
 		{
+			System.out.println("Début");
+			
 			PrintWriter    out = new PrintWriter   (this.lstClient.get(j).getOutputStream(), true);
 			BufferedReader in  = new BufferedReader(new InputStreamReader(this.lstClient.get(j).getInputStream()));
 
 			PrintWriter    out1 = new PrintWriter   (this.lstClient.get(aj).getOutputStream(), true);
 			BufferedReader in1  = new BufferedReader(new InputStreamReader(this.lstClient.get(aj).getInputStream()));
+
+			System.out.println("Un peu apréle début");
 
 			out.println("Joue gros enculé");
 			out1.println("Ce n'est pas ton tour!!!");
@@ -85,7 +87,28 @@ public class Serveur
 			out1.println("Le coup est joué, le voici : ");
 			out1.println(this.ctrl.getPlateau());
 		}
-		catch(Exception e){}
+		catch(Exception e){ System.out.println(e);}
 
+		this.nbTour++;
+	}
+
+	public void ServeurFin()
+	{
+		int j, aj;
+		if(this.nbTour % 2 == 0){j = 0;aj = 1;}
+		else{j = 1;aj = 0;}
+
+		try
+		{
+
+			PrintWriter    out = new PrintWriter   (this.lstClient.get(j).getOutputStream(), true);
+			PrintWriter    out1 = new PrintWriter   (this.lstClient.get(aj).getOutputStream(), true);
+
+			out.println("Fin de la partie ez fdp");
+			out1.println("Fin de la partie gg bg");
+
+		}catch (Exception e){}
+
+		System.exit(0);
 	}
 }

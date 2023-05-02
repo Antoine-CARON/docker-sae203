@@ -92,11 +92,12 @@ public class Controleur
 		this.serv = new Serveur(this);
 		this.serv.creerServeur();
 
-		int cpt = 0;
-		while(cpt < 4)
+		while(!this.mrpn.finDePartie())
 		{
+			System.out.println("Nique toi Antoine");
 			this.serv.jouer();
-			cpt++;
 		}
+
+		this.serv.ServeurFin();
 	}
 }

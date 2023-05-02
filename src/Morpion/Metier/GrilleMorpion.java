@@ -204,14 +204,15 @@ public class GrilleMorpion
 
 		for(int lig = 0; lig < 3; lig ++)
 		{
-			sRet += "-----------------";
+			sRet += "-------------\n";
 			sRet += "| ";
 			for(int col = 0; col < 3; col ++)
 			{
 				sRet += this.grille[lig][col] + " | ";
 			}
+			sRet += "\n";
 		}
-		sRet += "-----------------";
+		sRet += "-------------";
 
 		return sRet;
 	}

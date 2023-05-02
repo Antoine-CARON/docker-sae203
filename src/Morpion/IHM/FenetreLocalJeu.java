@@ -17,7 +17,7 @@ public class FenetreLocalJeu extends Fenetre
 
 	public FenetreLocalJeu(Morpion.Controleur ctrl)
 	{
-		super(ctrl, true);
+		super(ctrl);
 
 		this.serv = null;
 		this.cli  = null;

@@ -85,13 +85,11 @@ public class FenetreLocalChoix extends JFrame implements ActionListener
 		{
 			this.locale.setVisible(true);
 			this.dispose();
-			this.ctrl.setServeur();
 		}
 		if (e.getSource() == this.btnClient && cbClient.isEnabled())
 		{
 			this.locale.setVisible(true);
 			this.dispose();
-			this.ctrl.setClient(this.txtClientServ.getText());
 		}
 	}
 }

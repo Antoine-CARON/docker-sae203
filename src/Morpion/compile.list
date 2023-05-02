@@ -1,6 +1,7 @@
 ./Controleur.java
 
 ./Metier/GrilleMorpion.java
+./Metier/Serveur.java
 
 ./IHM/Fenetre.java
 ./IHM/PanneauFonct.java
@@ -8,6 +9,5 @@
 ./IHM/FenetreAccueil.java
 ./IHM/FenetreLocalChoix.java
 ./IHM/FenetreLocalJeu.java
-
-./Serveur/Serveur.java
-./Serveur/Client.java
+./IHM/FenetreServeur.java
+./IHM/FenetreClient.java

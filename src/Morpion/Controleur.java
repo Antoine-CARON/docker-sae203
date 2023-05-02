@@ -3,7 +3,7 @@ package Morpion;
 import javax.swing.ImageIcon;
 
 import Morpion.Metier.GrilleMorpion;
-import Morpion.Serveur.Serveur;
+import Morpion.Metier.Serveur;
 import Morpion.IHM.*;
 
 public class Controleur 
@@ -12,7 +12,7 @@ public class Controleur
 
 	private Morpion.IHM.FenetreAccueil fntrAcc;
 
-	private Morpion.Serveur.Serveur serv;
+	private Morpion.Metier.Serveur serv;
 
 	private boolean tourJoueurX = true;
 
@@ -94,7 +94,6 @@ public class Controleur
 
 		while(!this.mrpn.finDePartie())
 		{
-			System.out.println("Nique toi Antoine");
 			this.serv.jouer();
 		}
 

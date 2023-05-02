@@ -6,7 +6,7 @@ import java.awt.event.*;
 
 public class FenetreLocalChoix extends JFrame implements ActionListener
 {
-	private FenetreLocalJeu locale;
+	private FenetreClient client;
 	private FenetreServeur serv;
 
 	private JPanel pnlChoix;
@@ -28,7 +28,6 @@ public class FenetreLocalChoix extends JFrame implements ActionListener
 		
 		// Création des Controles
 		this.ctrl = ctrl;
-		this.locale        = new FenetreLocalJeu(this.ctrl);
 
 		this.pnlChoix      = new JPanel();
 
@@ -69,7 +68,7 @@ public class FenetreLocalChoix extends JFrame implements ActionListener
 		}
 		if (e.getSource() == this.btnClient)
 		{
-			this.locale.setVisible(true);
+			this.client = new FenetreClient();
 			this.dispose();
 		}
 	}

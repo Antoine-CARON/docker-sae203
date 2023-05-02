@@ -47,6 +47,7 @@ public class Serveur
 		{
 			System.out.println("erreur");
 		}
+		System.out.println("\nLa artie peut commencer\n");
 	}
 
 	public void jouer()

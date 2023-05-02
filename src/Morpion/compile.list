@@ -8,3 +8,6 @@
 ./IHM/FenetreAccueil.java
 ./IHM/FenetreLocalChoix.java
 ./IHM/FenetreLocalJeu.java
+
+./Serveur/Serveur.java
+./Serveur/Client.java

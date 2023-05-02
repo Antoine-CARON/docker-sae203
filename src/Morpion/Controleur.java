@@ -3,6 +3,7 @@ package Morpion;
 import javax.swing.ImageIcon;
 
 import Morpion.Metier.GrilleMorpion;
+import Morpion.Serveur.Serveur;
 import Morpion.IHM.*;
 
 public class Controleur 
@@ -10,6 +11,8 @@ public class Controleur
 	private Morpion.Metier.GrilleMorpion mrpn;
 
 	private Morpion.IHM.FenetreAccueil fntrAcc;
+
+	private Morpion.Serveur.Serveur serv;
 
 	private boolean tourJoueurX = true;
 
@@ -79,8 +82,9 @@ public class Controleur
 		return this.mrpn.getPartiesX();
 	}
 
-	public void launchServ()
+	public void launchServ(FenetreServeur fntrServ)
 	{
-		
+		this.serv = new Serveur(fntrServ);
+		this.serv.creerServeur();
 	}
 }

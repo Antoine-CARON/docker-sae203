@@ -64,7 +64,7 @@ public class FenetreLocalChoix extends JFrame implements ActionListener
 		if (e.getSource() == this.btnServ)
 		{
 			this.serv = new FenetreServeur();
-			this.ctrl.launchServ();
+			this.ctrl.launchServ(this.serv);
 			this.dispose();
 		}
 		if (e.getSource() == this.btnClient)

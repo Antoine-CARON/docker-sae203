@@ -91,5 +91,12 @@ public class Controleur
 	{
 		this.serv = new Serveur(this);
 		this.serv.creerServeur();
+
+		int cpt = 0;
+		while(cpt < 4)
+		{
+			this.serv.jouer();
+			cpt++;
+		}
 	}
 }

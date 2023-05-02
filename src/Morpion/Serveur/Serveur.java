@@ -60,7 +60,11 @@ public class Serveur
 			PrintWriter    out = new PrintWriter   (this.lstClient.get(j).getOutputStream(), true);
 			BufferedReader in  = new BufferedReader(new InputStreamReader(this.lstClient.get(j).getInputStream()));
 
+			PrintWriter    out1 = new PrintWriter   (this.lstClient.get(aj).getOutputStream(), true);
+			BufferedReader in1  = new BufferedReader(new InputStreamReader(this.lstClient.get(aj).getInputStream()));
+
 			out.println("Joue gros enculé");
+			out1.println("Ce n'est pas ton tour!!!");
 
 			String sTest = in.readLine();
 			while ( !(Integer.parseInt("" + sTest.charAt(0)) <= 2) &&
@@ -68,6 +72,7 @@ public class Serveur
 					!(Integer.parseInt("" + sTest.charAt(2)) <= 2) &&
 					!(Integer.parseInt("" + sTest.charAt(2)) >= 0))
 			{
+				out.println("Saisie invalide, recommence");
 				sTest = in.readLine();
 			}
 
@@ -76,9 +81,7 @@ public class Serveur
 
 			this.ctrl.joueCase(lig, col);
 
-			PrintWriter    out1 = new PrintWriter   (this.lstClient.get(aj).getOutputStream(), true);
-			BufferedReader in1  = new BufferedReader(new InputStreamReader(this.lstClient.get(aj).getInputStream()));
-
+			out1.println("Le coup est joué, le voici : ");
 			out1.println(this.ctrl.getPlateau());
 		}
 		catch(Exception e){}

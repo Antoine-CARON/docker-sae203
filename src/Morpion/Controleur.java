@@ -47,6 +47,11 @@ public class Controleur
 		return sRet;
 	}
 
+	public String getPlateau()
+	{
+		return this.mrpn.getPlateau();
+	}
+
 	public char getVictoire()
 	{
 		if (this.mrpn.victoire('X'))
@@ -82,9 +87,9 @@ public class Controleur
 		return this.mrpn.getPartiesX();
 	}
 
-	public void launchServ(FenetreServeur fntrServ)
+	public void launchServ()
 	{
-		this.serv = new Serveur(fntrServ);
+		this.serv = new Serveur(this);
 		this.serv.creerServeur();
 	}
 }

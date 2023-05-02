@@ -197,4 +197,22 @@ public class GrilleMorpion
 	{
 		return partiesX;
 	}
+
+	public String getPlateau()
+	{
+		String sRet = "";
+
+		for(int lig = 0; lig < 3; lig ++)
+		{
+			sRet += "-----------------";
+			sRet += "| ";
+			for(int col = 0; col < 3; col ++)
+			{
+				sRet += this.grille[lig][col] + " | ";
+			}
+		}
+		sRet += "-----------------";
+
+		return sRet;
+	}
 }

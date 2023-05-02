@@ -32,8 +32,8 @@ public class FenetreServeur extends JFrame
 		this.setVisible(true);
 	}
 
-	public void setMessage(String mess)
+	/*public void setMessage(String mess)
 	{
 		this.lblInfo.setText(mess);
-	}
+	}*/
 }

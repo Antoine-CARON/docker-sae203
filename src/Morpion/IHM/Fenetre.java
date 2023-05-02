@@ -55,7 +55,7 @@ public class Fenetre extends JFrame
 		this.lblScore.setHorizontalAlignment(SwingConstants.CENTER);
 		this.lblGagn.setHorizontalAlignment (SwingConstants.CENTER);
 
-		this.setVisible(true);
+		this.setVisible(false);
 	}
 
 	public Morpion.Controleur getCtrl()

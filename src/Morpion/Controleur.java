@@ -1,6 +1,5 @@
 package Morpion;
 
-
 import javax.swing.ImageIcon;
 
 import Morpion.Metier.GrilleMorpion;
@@ -10,14 +9,14 @@ public class Controleur
 {
 	private Morpion.Metier.GrilleMorpion mrpn;
 
-	private Morpion.IHM.Fenetre fntr;
+	private Morpion.IHM.FenetreAccueil fntrAcc;
 
 	private boolean tourJoueurX = true;
 
 	public Controleur()
 	{
 		this.mrpn = new GrilleMorpion();
-		this.fntr = new Fenetre(this);
+		this.fntrAcc = new FenetreAccueil(this);
 	} 
 
 	public static void main (String[] args)

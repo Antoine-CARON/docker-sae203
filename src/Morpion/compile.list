@@ -5,3 +5,6 @@
 ./IHM/Fenetre.java
 ./IHM/PanneauFonct.java
 ./IHM/PanneauMorpion.java
+./IHM/FenetreAccueil.java
+./IHM/FenetreLocalChoix.java
+./IHM/FenetreLocalJeu.java

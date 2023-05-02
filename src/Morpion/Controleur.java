@@ -78,4 +78,9 @@ public class Controleur
 	{
 		return this.mrpn.getPartiesX();
 	}
+
+	public void launchServ()
+	{
+		
+	}
 }

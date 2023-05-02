@@ -7,5 +7,6 @@ solo
 ou 
 multi
 
--> szrveur qui tourne en boucle indépendament
+-> serveur qui tourne en boucle indépendament
+
 -> client : rentre l'ip de l'host

@@ -11,8 +11,8 @@ RUN apt install -y git
 EXPOSE 4660
 
 # Lancer le fichier Controleur.java
-RUN ["mkdir docker-sae203"]
-RUN ["git", "clone", "git@github.com:Antoine-CARON/docker-sae203.git"]
-RUN ["cd" "docker-sae203/src"]
-RUN ["javac", "@compile.list"]
+CMD ["mkdir docker-sae203"]
+CMD ["git", "clone", "git@github.com:Antoine-CARON/docker-sae203.git"]
+CMD ["cd" "docker-sae203/src"]
+CMD ["javac", "@compile.list"]
 CMD ["java", "Morpion.Controleur"]

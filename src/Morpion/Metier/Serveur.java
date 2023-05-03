@@ -54,6 +54,7 @@ public class Serveur
 
 		try
 		{
+			int lig = -1, col = -1;
 			
 			PrintWriter    out = new PrintWriter   (this.lstClient.get(j).getOutputStream(), true);
 			BufferedReader in  = new BufferedReader(new InputStreamReader(this.lstClient.get(j).getInputStream()));
@@ -68,22 +69,32 @@ public class Serveur
 			out1.println("C'est au tour de l'autre joueur !!!\n");
 
 			String sTest = in.readLine();
-			while ( !(sTest.length() >= 3) &&
-					!(Integer.parseInt("" + sTest.charAt(0)) <= 2) &&
-					!(Integer.parseInt("" + sTest.charAt(0)) >= 0) &&
-					!(Integer.parseInt("" + sTest.charAt(2)) <= 2) &&
-					!(Integer.parseInt("" + sTest.charAt(2)) >= 0))
-			{
-				out.println("Saisie invalide, recommencez");
-				sTest = in.readLine();
-			}
 
-			int lig = Integer.parseInt("" + sTest.charAt(0));
-			int col = Integer.parseInt("" + sTest.charAt(2));
+			try
+			{
+				lig = Integer.parseInt("" + sTest.charAt(0));
+				col = Integer.parseInt("" + sTest.charAt(2));
+			}catch(Exception e){}
+
+			while ( !(sTest.length() == 3) ||
+					!(lig <= 2) ||
+					!(lig >= 0) ||
+					!(col <= 2) ||
+					!(col >= 0))
+			{
+				out.println("\nSaisie invalide, recommencez");
+				sTest = in.readLine();
+
+				try
+				{
+					lig = Integer.parseInt("" + sTest.charAt(0));
+					col = Integer.parseInt("" + sTest.charAt(2));
+				}catch(Exception e){}
+			}
 
 			this.ctrl.joueCase(lig, col);
 
-			out.println("Voici votre coup : ");
+			out.println("\nVoici votre coup : ");
 			out.println(this.ctrl.getPlateau());
 
 			out1.println("Le coup est joué, voici le plateau : ");
@@ -92,7 +103,7 @@ public class Serveur
 			out.println("\n");
 			out1.println("\n");
 		}
-		catch(Exception e){ System.out.println(e);}
+		catch(Exception e){}
 
 		this.nbTour++;
 	}

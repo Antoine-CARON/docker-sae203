@@ -11,4 +11,5 @@ RUN apt install -y git
 EXPOSE 4660
 
 # Lancer le fichier Controleur.java
-RUN ./exec.sh
+CMD ["git", "clone", "git@github.com:Antoine-CARON/docker-sae203.git"]
+RUN ./docker-sae203/src/exec.sh

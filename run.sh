@@ -1,1 +1,2 @@
-java Morpion.Controleur
+javac src.@compile.list
+java src.Morpion.Controleur

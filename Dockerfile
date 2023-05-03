@@ -2,9 +2,11 @@
 FROM debian:latest
 
 # Installer des services et des packages
-RUN apt-get update
-RUN apt-get upgrade
-RUN apt-get install -y openjdk-11-jdk-headless
+RUN  apt-get update &&  \
+    apt-get -y install  \
+    nginx               \
+    git                 \
+    default-jdk
 
 
 RUN git clone https://github.com/Antoine-CARON/docker-sae203.git

@@ -2,12 +2,16 @@
 FROM debian:latest
 
 # Installer des services et des packages
-RUN apt-get update
+ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt-get install -y openjdk-7-jre && apt-get clean &&\
-             mkdir temp_dir  &&   cd temp_dir && \
-             ${JAVA_HOME}/bin/jar -xvf somejar.jar  &&\
-             cd ..
+RUN mkdir -p /usr/share/man/man1 /usr/share/man/man2
+
+RUN apt-get update && \
+apt-get install -y --no-install-recommends \
+        openjdk-11-jre
+
+# Prints installed java version, just for checking
+RUN java --version
 
 # Copier les fichiers de l'hôte vers l'image
 COPY ./Morpion ./Morpion

@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get upgrade
 RUN apt-get install -y openjdk-11-jdk-headless
 
-COPY ./docker-sae203 /usr
+COPY ../docker-sae203 /usr
 
 # Exposer un port
 EXPOSE 4660

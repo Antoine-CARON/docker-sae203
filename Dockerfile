@@ -7,7 +7,7 @@ RUN apt-get upgrade
 RUN apt-get install -y openjdk-11-jdk-headless
 
 
-RUN git clone git@github.com:Antoine-CARON/docker-sae203.git
+RUN git clone https://github.com/Antoine-CARON/docker-sae203.git
 
 RUN cp -r docker-sae203 /var/www/
 

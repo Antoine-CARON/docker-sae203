@@ -6,10 +6,10 @@ RUN apt-get update
 RUN apt-get upgrade
 RUN apt-get install -y openjdk-11-jdk-headless
 
-COPY ./Morpion /usr
+COPY ../src/Morpion /usr
 
 # Exposer un port
 EXPOSE 4660
 
 # Lancer le fichier Controleur.java
-RUN ./usr/docker-sae203/src/exec.sh
+RUN ./usr/src/exec.sh

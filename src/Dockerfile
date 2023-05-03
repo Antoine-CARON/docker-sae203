@@ -10,7 +10,7 @@ RUN apt-get install -y openjdk-7-jre && apt-get clean &&\
              cd ..
 
 # Copier les fichiers de l'hôte vers l'image
-COPY ./docker-sae203 /src/Morpion
+COPY /src/Morpion
 
 # Exposer le port 80
 EXPOSE 80

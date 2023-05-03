@@ -1,4 +1,5 @@
 #!bin/sh
 
-javac ./src/@compile.list
+javac ./src/Morpion/Controleur.java
+
 java src.Morpion.Controleur

@@ -92,11 +92,16 @@ public class Controleur
 		this.serv = new Serveur(this);
 		this.serv.creerServeur();
 
-		while(!this.mrpn.finDePartie())
+		while(!this.mrpn.finDePartie() && !this.mrpn.matchNul())
 		{
 			this.serv.jouer();
+			System.out.println(this.mrpn.finDePartie());
+			System.out.println(this.mrpn.matchNul());
 		}
 
-		this.serv.ServeurFin();
+		System.out.println("egalité");
+
+		if(this.mrpn.matchNul()) {this.serv.ServeurFinNul();}
+		else {this.serv.ServeurFin();}
 	}
 }

@@ -106,7 +106,7 @@ public class GrilleMorpion
 			this.nbParties++;
 		}
 		
-		return victory;
+		return victory;-------------
 
 	}
 
@@ -200,19 +200,19 @@ public class GrilleMorpion
 
 	public String getPlateau()
 	{
-		String sRet = "";
+		String sRet = "     0   1   2  \n";
 
 		for(int lig = 0; lig < 3; lig ++)
 		{
-			sRet += "-------------\n";
-			sRet += "| ";
+			sRet += "   +---+---+---+\n";
+			sRet += " " + lig + " | ";
 			for(int col = 0; col < 3; col ++)
 			{
 				sRet += this.grille[lig][col] + " | ";
 			}
 			sRet += "\n";
 		}
-		sRet += "-------------";
+		sRet += "   +---+---+---+";
 
 		return sRet;
 	}

@@ -127,4 +127,20 @@ public class Serveur
 
 		System.exit(0);
 	}
+
+	public void ServeurFinNul()
+	{
+		try
+		{
+			System.out.println("fin nul");
+			PrintWriter    out = new PrintWriter   (this.lstClient.get(0).getOutputStream(), true);
+			PrintWriter    out1 = new PrintWriter   (this.lstClient.get(1).getOutputStream(), true);
+
+			out.println("Fin de la partie, vous avez fait un match nul");
+			out1.println("Fin de la partie, vous avez fait un match nul");
+			System.out.println("fin nul fin");
+		}catch (Exception e){}
+
+		System.exit(0);
+	}
 }

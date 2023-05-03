@@ -1,4 +1,4 @@
 #!bin/sh
 
-javac @src/compile.list
+javac docker-sae203/src/@compile.list
 java src.Morpion.Controleur

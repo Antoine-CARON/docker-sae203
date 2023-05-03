@@ -2,7 +2,7 @@
 FROM debian:latest
 
 # Installer des services et des packages
-RUN sudo apt-get install -y openjdk-11-jdk-headless
+RUN apt-get install -y openjdk-11-jdk-headless
 RUN apt install -y git
 
 # Exposer le port 80

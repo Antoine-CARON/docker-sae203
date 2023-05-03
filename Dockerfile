@@ -7,16 +7,16 @@ RUN apt-get upgrade
 RUN apt-get install -y openjdk-11-jdk-headless
 
 
-RUN git clone https://github.com/Erreiip/docker-sae203.git
+RUN git clone git@github.com:Antoine-CARON/docker-sae203.git
 
-RUN cp -r docker-sae203-1/html/ /var/www/
+RUN cp -r docker-sae203 /var/www/
 
-RUN echo $(ls -la docker-sae203-1)
+RUN echo $(ls -la docker-sae203)
 
-RUN chmod u+x docker-sae203-1/run.sh
+RUN chmod u+x docker-sae203/run.sh
 
 # Exposer le port 80
-EXPOSE 80
+EXPOSE 4660
 
 
 # Lancer le service apache au démarrage du conteneur

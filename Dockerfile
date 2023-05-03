@@ -4,7 +4,6 @@ FROM debian:latest
 # Installer des services et des packages
 RUN  apt-get update &&  \
     apt-get -y install  \
-    nginx               \
     git                 \
     default-jdk
 

@@ -106,7 +106,7 @@ public class GrilleMorpion
 			this.nbParties++;
 		}
 		
-		return victory;-------------
+		return victory;
 
 	}
 

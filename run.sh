@@ -2,4 +2,4 @@
 
 javac docker-sae203/src/Morpion/Controleur.java
 
-java src.Morpion.Controleur
+java docker-sae203/src/Morpion/Morpion.Controleur

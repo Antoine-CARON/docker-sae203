@@ -1,12 +1,8 @@
-package Morpion.Metier;
-
 import java.io.*;
 import java.net.*;
 
 import java.util.*;
 
-//import Morpion.IHM.FenetreServeur;
-import Morpion.Controleur;
 
 public class Serveur 
 {

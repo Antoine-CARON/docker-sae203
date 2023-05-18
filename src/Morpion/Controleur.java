@@ -1,18 +1,13 @@
-package Morpion;
-
 import javax.swing.ImageIcon;
 
-import Morpion.Metier.GrilleMorpion;
-import Morpion.Metier.Serveur;
-import Morpion.IHM.*;
 
 public class Controleur 
 {
-	private Morpion.Metier.GrilleMorpion mrpn;
+	private GrilleMorpion mrpn;
 
-	private Morpion.IHM.FenetreAccueil fntrAcc;
+	private FenetreAccueil fntrAcc;
 
-	private Morpion.Metier.Serveur serv;
+	private Serveur serv;
 
 	private boolean tourJoueurX = true;
 
@@ -40,8 +35,8 @@ public class Controleur
 
 		switch (this.mrpn.getCase(lig, col))
 		{
-			case 'X' : { sRet = "./Morpion/Images/Croix.png";break;}
-			case 'O' : { sRet = "./Morpion/Images/rond.png"; break;}
+			case 'X' : { sRet = "./Images/Croix.png";break;}
+			case 'O' : { sRet = "./Images/rond.png"; break;}
 		}
 
 		return sRet;

@@ -1,5 +1,3 @@
-package Morpion.IHM;
-
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -7,12 +5,10 @@ import javax.swing.JPanel;
 import java.awt.event.*;
 import java.awt.*;
 
-import Morpion.Controleur;
-
 class PanneauMorpion extends JPanel implements ActionListener
 {
 	private JButton[][] grilleBtn;
-	private Morpion.Controleur  ctrl;
+	private Controleur  ctrl;
 	private Fenetre     fenetre;
 
 	public PanneauMorpion(Fenetre fenetre)

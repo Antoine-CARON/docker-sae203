@@ -1,10 +1,6 @@
-package Morpion.IHM;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-
-import Morpion.Controleur;
 
 public class FenetreAccueil extends JFrame implements ActionListener
 {
@@ -12,13 +8,13 @@ public class FenetreAccueil extends JFrame implements ActionListener
 	private FenetreLocalChoix locale;
 
 
-	private JPanel   pnlChoix;
+	private JPanel  pnlChoix;
 	private JButton btnNormal;
 	private JButton btnLocal;
 
-	private Morpion.Controleur     ctrl;
+	private Controleur     ctrl;
 
-	public FenetreAccueil(Morpion.Controleur ctrl)
+	public FenetreAccueil(Controleur ctrl)
 	{
 		//parametrage de la fenetre
 		this.setTitle   ("Morpion");
@@ -59,7 +55,7 @@ public class FenetreAccueil extends JFrame implements ActionListener
 		this.setVisible(true);
 	}
 
-	public Morpion.Controleur getCtrl()
+	public Controleur getCtrl()
 	{
 		return this.ctrl;
 	}

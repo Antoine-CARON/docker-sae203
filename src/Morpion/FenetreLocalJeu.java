@@ -1,5 +1,3 @@
-package Morpion.IHM;
-
 import java.net.*;
 import java.util.*;
 import java.io.*;
@@ -7,15 +5,13 @@ import java.io.*;
 import javax.swing.*;
 import java.awt.*;
 
-import Morpion.Controleur;
-
 public class FenetreLocalJeu extends Fenetre
 {
 	private ServerSocket serv;
 
 	private Socket cli;
 
-	public FenetreLocalJeu(Morpion.Controleur ctrl)
+	public FenetreLocalJeu(Controleur ctrl)
 	{
 		super(ctrl);
 

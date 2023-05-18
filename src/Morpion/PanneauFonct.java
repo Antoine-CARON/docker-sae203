@@ -1,5 +1,3 @@
-package Morpion.IHM;
-
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import java.awt.event.*;

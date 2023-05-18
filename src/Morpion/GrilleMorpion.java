@@ -1,5 +1,3 @@
-package Morpion.Metier;
-
 import iut.algo.*;
 
 /** objet morpion qui gère le plateau

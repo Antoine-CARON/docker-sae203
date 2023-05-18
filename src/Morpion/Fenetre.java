@@ -1,9 +1,5 @@
-package Morpion.IHM;
-
 import javax.swing.*;
 import java.awt.*;
-
-import Morpion.Controleur;
 
 public class Fenetre extends JFrame
 {
@@ -14,9 +10,9 @@ public class Fenetre extends JFrame
 	private JLabel         lblScore;
 	private JLabel         lblGagn;
 
-	private Morpion.Controleur     ctrl;
+	private Controleur     ctrl;
 
-	public Fenetre(Morpion.Controleur ctrl)
+	public Fenetre(Controleur ctrl)
 	{
 		//parametrage de la fenetre
 		this.setTitle   ("Morpion");
@@ -58,7 +54,7 @@ public class Fenetre extends JFrame
 		this.setVisible(false);
 	}
 
-	public Morpion.Controleur getCtrl()
+	public Controleur getCtrl()
 	{
 		return this.ctrl;
 	}

@@ -39,7 +39,7 @@ public class Serveur
 		{
 			System.out.println("erreur");
 		}
-		System.out.println("\nLes deux joueurs sont arrivés\nLa partie peut commencer\n");
+		System.out.println("\nLes deux joueurs sont arrives\nLa partie peut commencer\n");
 	}
 
 	public void jouer()
@@ -93,7 +93,7 @@ public class Serveur
 			out.println("\nVoici votre coup : ");
 			out.println(this.ctrl.getPlateau());
 
-			out1.println("Le coup est joué, voici le plateau : ");
+			out1.println("Le coup est joue, voici le plateau : ");
 			out1.println(this.ctrl.getPlateau());
 
 			out.println("\n");
@@ -117,7 +117,7 @@ public class Serveur
 			PrintWriter    out1 = new PrintWriter   (this.lstClient.get(aj).getOutputStream(), true);
 
 			out.println("Fin de la partie, vous avez perdu");
-			out1.println("Fin de la partie, bravo vous avez gagné");
+			out1.println("Fin de la partie, bravo vous avez gagne");
 
 		}catch (Exception e){}
 

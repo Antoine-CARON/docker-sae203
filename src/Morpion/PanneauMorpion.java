@@ -61,9 +61,9 @@ class PanneauMorpion extends JPanel implements ActionListener
 					{
 						switch (this.ctrl.getVictoire())
 						{
-							case 'X' -> this.fenetre.setMessage('X');
-							case 'O' -> this.fenetre.setMessage('O');
-							default  -> this.fenetre.setMessage('.');
+							case 'X' : { this.fenetre.setMessage('X'); break;}
+							case 'O' : { this.fenetre.setMessage('O'); break;}
+							default  : { this.fenetre.setMessage('.'); break;}
 						}
 					}
 				}

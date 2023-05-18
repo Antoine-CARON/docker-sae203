@@ -22,7 +22,7 @@ public class Fenetre extends JFrame
 
 		this.setLayout(new BorderLayout());
 		
-		// Création des Controles
+		// Creation des Controles
 		this.ctrl = ctrl;
 		this.pnlMorpion  = new PanneauMorpion(this);
 		this.pnlFonct    = new PanneauFonct(this);
@@ -76,9 +76,9 @@ public class Fenetre extends JFrame
 	{
 		switch (fin)
 		{
-			case 'X' -> this.lblGagn.setText("Le joueur X a gagné la partie");
-			case 'O' -> this.lblGagn.setText("Le joueur O a gagné la partie");
-			default  -> this.lblGagn.setText("La partie se conclue par un match nul !");
+			case 'X' : { this.lblGagn.setText("Le joueur X a gagne la partie");break;}
+			case 'O' : { this.lblGagn.setText("Le joueur O a gagne la partie");break;}
+			default  : { this.lblGagn.setText("La partie se conclue par un match nul !");break;}
 		}
 	}
 }

@@ -18,7 +18,7 @@ public class FenetreClient extends JFrame
 
 		this.setLayout(new GridLayout(2, 1));
 		
-		// Création des Controles
+		// Creation des Controles
 		this.lblInfo       = new JLabel("Pour jouer en tant que client, connecter vous à un serveur ouvert via\n" 
 										+ " la commande suivante (sur ce projet, nous utiliserons le port 4660) :");
 		this.lblCommande       = new JLabel("nc <nom de machine/adresse ip> <port>");

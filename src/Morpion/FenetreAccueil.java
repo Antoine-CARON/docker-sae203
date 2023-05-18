@@ -24,7 +24,7 @@ public class FenetreAccueil extends JFrame implements ActionListener
 
 		this.setLayout(new BorderLayout());
 		
-		// Création des Controles
+		// Creation des Controles
 		this.ctrl = ctrl;
 
 		this.fenetre       = new Fenetre      (this.ctrl);

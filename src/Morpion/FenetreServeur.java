@@ -19,8 +19,8 @@ public class FenetreServeur extends JFrame
 
 		this.setLayout(new GridLayout(2, 1));
 		
-		// Création des Controles
-		this.lblInfo       = new JLabel("Serveur en cours d'éxécution ...");
+		// Creation des Controles
+		this.lblInfo       = new JLabel("Serveur en cours d'execution ...");
 		this.lblPort       = new JLabel("Port du serveur : " + this.portServ);
 		
 		// Activation des Controles

@@ -40,8 +40,8 @@ public class Controleur
 
 		switch (this.mrpn.getCase(lig, col))
 		{
-			case 'X' -> sRet = "./Morpion/Images/Croix.png";
-			case 'O' -> sRet = "./Morpion/Images/rond.png";
+			case 'X' : { sRet = "./Morpion/Images/Croix.png";break;}
+			case 'O' : { sRet = "./Morpion/Images/rond.png"; break;}
 		}
 
 		return sRet;
@@ -99,7 +99,7 @@ public class Controleur
 			System.out.println(this.mrpn.matchNul());
 		}
 
-		System.out.println("egalité");
+		System.out.println("egalite");
 
 		if(this.mrpn.matchNul()) {this.serv.ServeurFinNul();}
 		else {this.serv.ServeurFin();}

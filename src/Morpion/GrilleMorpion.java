@@ -1,6 +1,6 @@
 import iut.algo.*;
 
-/** objet morpion qui gère le plateau
+/** objet morpion qui gere le plateau
  *  Morpion avec IHM
  *  @author  Caron Antoine
  *  @version 1 du 04/03/2023

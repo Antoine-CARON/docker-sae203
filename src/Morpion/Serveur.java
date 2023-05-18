@@ -61,7 +61,7 @@ public class Serveur
 			out.println("-------------");
 			out1.println("-------------");
 
-			out.println("C'est à vous de jouez (<lig>:<col>) : ");
+			out.println("C'est a vous de jouez (<lig>:<col>) : ");
 			out1.println("C'est au tour de l'autre joueur !!!\n");
 
 			String sTest = in.readLine();

@@ -40,7 +40,10 @@ Vous pouvez jouer en Solo, en cliquant sur le bouton du haut
 Ou alors en multijoueur, pour cela le premier utilisateur devra lancer un serveur,
 Et ensuite, deux joueur devront rejoindre la partie :
 
-Soit avec la commande suivante dans un terminal bash : ```shell nc <adresse-ip du serveur> 4660```
+Soit avec la commande suivante dans un terminal bash : 
+```shell 
+nc <adresse-ip du serveur> 4660
+```
 Soit directement sur notre appliction, en choisissant d'être le client
 
 - Quand vous avez fini de jouer, n'oubliez d'arreter le conteneur :

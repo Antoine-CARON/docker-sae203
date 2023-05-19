@@ -1,22 +1,9 @@
-# docker-sae203
-Projet docker de la SAE 2.03 de l'équipe 13.
-
-acceuil choisi
-
-solo
-ou 
-multi
-
--> serveur qui tourne en boucle indépendament
-
--> client : rentre l'ip de l'host
-
-
-
-
 # Docker - SAE2.03
 
-Exemple de **dockerfile + github** pour lancer un serveur web basé sur l'image ```httpd```
+Projet docker de la SAE 2.03 de l'équipe 13.
+
+Contenu du projet : 
+Morpion en ligne (en java)
 
 ## Instructions pour lancer l'application
 
@@ -27,25 +14,25 @@ docker --version
 
 - Cloner le référentiel :
  ```shell
-git clone git@github.com:juanluck/exempleDockerfile.git
+git clone git@github.com:Antoine-CARON/docker-sae203.git
 ```
 
-- Aller au référentiel :
+- Se placer dans le référentiel :
 ```shell
-cd exempleDockerfile
+cd docker-sae203
 ```
 
 - Construisez l'image décrite dans dockerfile avec docker build : 
 ```shell
 docker build -t <choisir-un-nom-pour-l'image> .
 ```
+Attention, ne pas oublier le point a la fin (cela signifie que l'on construit dans le repertoire courant)
 
-- Lancer le serveur web :
+
+- Lancer le conteneur avec l'image que vous venez de creer :
 ```shell
-docker run -d -p 8080:80 <nom-de-l'image-choisie>
+docker run -d <nom-de-l'image-choisie>
 ```
-
-- Vérifier que l'application est en cours d'exécution. Pour ce faire, ouvrez un navigateur et tapez ```localhost:8080```
 
 - Vérifier que le conteneur associé est actif :
 ```shell
@@ -58,19 +45,12 @@ CONTAINER ID   IMAGE          COMMAND              CREATED          STATUS      
 b8f8f406b03c   httpd-juanlu   "httpd-foreground"   30 minutes ago   Up 30 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   quirky_tesla
 ```
 
-- Finalement, arrêtez le conteneur avec la commande suivante (les dernières chiffres sont le code de hachage affiché par docker ps):
+- Quand vous avez fini de jouer, n'oubliez d'arreter le conteneur :
 ```shell
-docker stop b8f8f406b03c
+docker stop <CONTAINER ID>
 ```
 
-- Encore, si on souhaite supprimer le conteneur, on peut taper :
+- Et si vous n'aurez pas l'occasion de relancer ce conteneur, vous pouvez même le supprimer :
 ```shell
-docker rm b8f8f406b03c
+docker rm <CONTAINER ID>
 ```
-
-**NOTE :** Au lieu du code de hachage, on peut toujours taper le nom du conteneur. Dans le cas d'exemple ce nom est ```quirky_tesla```
-
-
-
-
-

@@ -1,4 +1,4 @@
-import iut.algo.*;
+import java.io.Console;
 
 /** objet morpion qui gere le plateau
  *  Morpion avec IHM

@@ -1,5 +1,5 @@
 #!bin/sh 
 
-javac docker-sae203/src/Morpion/*.java
+javac ./src/Morpion/*.java
 
-java docker-sae203/Morpion/Controleur
+java ./Morpion/Controleur

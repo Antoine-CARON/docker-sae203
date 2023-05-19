@@ -18,7 +18,7 @@ RUN chmod u+x docker-sae203/run.sh
 
 RUN export PATH=./bin/:$PATH
 
-# Exposer le port 80
+# Exposer le port 4660
 EXPOSE 4660
 
 

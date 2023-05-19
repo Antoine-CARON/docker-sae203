@@ -1,6 +1,3 @@
-import javax.swing.ImageIcon;
-
-
 public class Controleur 
 {
 	private GrilleMorpion mrpn;

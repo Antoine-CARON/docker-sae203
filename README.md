@@ -34,15 +34,19 @@ Attention, ne pas oublier le point a la fin (cela signifie que l'on construit da
 docker run -d <nom-de-l'image-choisie>
 ```
 
-- Vérifier que le conteneur associé est actif :
+- Une fois le conteneur lancer, une nouvelle fenêtre devrait s'ouvrir, vous avez deux possibilités :
 ```shell
-docker ps
+- Vous pouvez jouer en Solo, en cliquant sur le bouton du haut
 ```
-
-- La sortie de ```docker ps``` doit être similaire à :
 ```shell
-CONTAINER ID   IMAGE          COMMAND              CREATED          STATUS          PORTS                                   NAMES
-b8f8f406b03c   httpd-juanlu   "httpd-foreground"   30 minutes ago   Up 30 minutes   0.0.0.0:8080->80/tcp, :::8080->80/tcp   quirky_tesla
+- Ou alors en multijoueur, pour cela le prrmier utilisateur devra lancer un serveur,
+Et ensuite, deux joueur devront rejoindre la partie : 
+ ```shell
+ - Soit avec la commande suivante dans un terminal bash : nc <adresse-ip du serveur> 4660
+ ```
+  ```shell
+ - Soit directement sur notre appliction, en choisissant d'être le client
+ ```
 ```
 
 - Quand vous avez fini de jouer, n'oubliez d'arreter le conteneur :

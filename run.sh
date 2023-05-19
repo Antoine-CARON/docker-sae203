@@ -1,5 +1,5 @@
 #!bin/sh 
-export PATH=bin:$PATH
+export PATH=bin/:$PATH
 
 javac docker-sae203/src/Morpion/*.java
 

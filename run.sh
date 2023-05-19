@@ -2,6 +2,6 @@
 
 javac docker-sae203/src/Morpion/*.java
 
-ls -R
+cd /var/www/src/
 
-java ./var/www/src/Controleur
+java ./Controleur

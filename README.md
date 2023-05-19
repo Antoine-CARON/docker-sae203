@@ -26,7 +26,8 @@ cd docker-sae203
 ```shell
 docker build -t <choisir-un-nom-pour-l'image> .
 ```
-ne pas oublier le point a la fin (cela signifie que l'on construit dans le repertoire courant)
+Attention, ne pas oublier le point a la fin (cela signifie que l'on construit dans le repertoire courant)
+
 
 - Lancer le conteneur avec l'image que vous venez de creer :
 ```shell

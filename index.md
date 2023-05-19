@@ -2,4 +2,4 @@
 
 # Morpion en java en local avec docker
 
-### Présentation du projet
+## Présentation du projet

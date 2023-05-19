@@ -36,7 +36,8 @@ docker run -d <nom-de-l'image-choisie>
 
 - Une fois le conteneur lancer, une nouvelle fenêtre devrait s'ouvrir, vous avez deux possibilités :
 
-Vous pouvez jouer en Solo, en cliquant sur le bouton du haut
+Vous pouvez jouer en Solo, en cliquant sur le bouton du haut.
+
 Ou alors en multijoueur, pour cela le premier utilisateur devra lancer un serveur,
 Et ensuite, deux joueur devront rejoindre la partie :
 

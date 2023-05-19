@@ -39,15 +39,14 @@ docker run -d <nom-de-l'image-choisie>
 - Vous pouvez jouer en Solo, en cliquant sur le bouton du haut
 ```
 ```shell
-- Ou alors en multijoueur, pour cela le prrmier utilisateur devra lancer un serveur,
-Et ensuite, deux joueur devront rejoindre la partie : 
+- Ou alors en multijoueur, pour cela le premier utilisateur devra lancer un serveur,
+Et ensuite, deux joueur devront rejoindre la partie : ```
  ```shell
  - Soit avec la commande suivante dans un terminal bash : nc <adresse-ip du serveur> 4660
- ```
-  ```shell
+```
+ ```shell
  - Soit directement sur notre appliction, en choisissant d'être le client
  ```
-```
 
 - Quand vous avez fini de jouer, n'oubliez d'arreter le conteneur :
 ```shell

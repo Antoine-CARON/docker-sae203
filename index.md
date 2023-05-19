@@ -5,4 +5,9 @@
 ## Présentation du projet
 
 Notre projet est celui d'un morpion avec IHM GUI pour la partie de jeu sur le même poste (solo).
-Et une partie
+Et une partie en CUI pour le réseau local. 
+
+## Fonctionnement du projet
+
+
+## Guide pour jouer

@@ -13,8 +13,8 @@ Le Jeu est un scripte java qui est hébergé dans un contener sur docker ce qui 
 
 ## Guide pour jouer
 
-La partie commence a partir du moment où 2 joueurs se connectes, ensuite la partie se lance. Les informations sont données dans le terminale,
-il suffit de suivre les instructions pour entrez les coordonnées pour avancer dans la partie.
+La partie commence a partir du moment où 2 joueurs se connectent. Les informations sont données dans le terminal,
+il suffit de suivre les instructions pour entrer les coordonnées pour avancer dans la partie.
 
 ### Comment jouer au morpion ?
 Pour jouer une partie de morpion, il suffit de tracer sur une feuille blanche une grille

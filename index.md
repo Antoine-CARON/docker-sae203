@@ -9,6 +9,6 @@ Et une partie en CUI pour le réseau local.
 
 ## Fonctionnement du projet
 
-Le 
+Le Jeu est un scripte java qui est hébergé dans un contener sur docker ce qui nous permet
 
 ## Guide pour jouer

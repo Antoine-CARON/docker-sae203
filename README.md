@@ -5,6 +5,10 @@ Projet docker de la SAE 2.03 de l'équipe 13.
 Contenu du projet : 
 Morpion en ligne (en java)
 
+### Prérequis :
+
+X-ming, Docker
+
 ## Instructions pour lancer l'application
 
 - Vérifiez si docker est installé :

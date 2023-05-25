@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.io.Console;
 
 public class FenetreLocalChoix extends JFrame implements ActionListener
 {
@@ -66,7 +67,9 @@ public class FenetreLocalChoix extends JFrame implements ActionListener
 		}
 		if (e.getSource() == this.btnClient)
 		{
-			this.client = new FenetreClient();
+			Console console = System.console();
+			String saisie = console.readLine("Saisir : ");
+			new Client(saisie);
 			this.dispose();
 		}
 	}
